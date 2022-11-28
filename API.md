@@ -1,21 +1,40 @@
 # API Reference <a name="API Reference" id="api-reference"></a>
 
+## Constructs <a name="Constructs" id="Constructs"></a>
 
+### AppSyncDataSourceStepFunctionsExpress <a name="AppSyncDataSourceStepFunctionsExpress" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress"></a>
 
-## Classes <a name="Classes" id="Classes"></a>
-
-### Hello <a name="Hello" id="@opsbr/cdk-appsync-data-source-sfn-express.Hello"></a>
-
-#### Initializers <a name="Initializers" id="@opsbr/cdk-appsync-data-source-sfn-express.Hello.Initializer"></a>
+#### Initializers <a name="Initializers" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer"></a>
 
 ```typescript
-import { Hello } from '@opsbr/cdk-appsync-data-source-sfn-express'
+import { AppSyncDataSourceStepFunctionsExpress } from '@opsbr/cdk-appsync-data-source-sfn-express'
 
-new Hello()
+new AppSyncDataSourceStepFunctionsExpress(scope: Construct, id: string, props: AppSyncDataSourceStepFunctionsExpressProps)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.props">props</a></code> | <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps">AppSyncDataSourceStepFunctionsExpressProps</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+##### `props`<sup>Required</sup> <a name="props" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.props"></a>
+
+- *Type:* <a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps">AppSyncDataSourceStepFunctionsExpressProps</a>
 
 ---
 
@@ -23,17 +42,196 @@ new Hello()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.Hello.sayHello">sayHello</a></code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.addStateMachineResolver">addStateMachineResolver</a></code> | *No description.* |
 
 ---
 
-##### `sayHello` <a name="sayHello" id="@opsbr/cdk-appsync-data-source-sfn-express.Hello.sayHello"></a>
+##### `toString` <a name="toString" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.toString"></a>
 
 ```typescript
-public sayHello(): string
+public toString(): string
 ```
 
+Returns a string representation of this construct.
 
+##### `addStateMachineResolver` <a name="addStateMachineResolver" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.addStateMachineResolver"></a>
+
+```typescript
+public addStateMachineResolver(id: string, props: AddStateMachineResolverProps): CfnResolver
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.addStateMachineResolver.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `props`<sup>Required</sup> <a name="props" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.addStateMachineResolver.parameter.props"></a>
+
+- *Type:* <a href="#@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps">AddStateMachineResolverProps</a>
+
+---
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+
+---
+
+##### ~~`isConstruct`~~ <a name="isConstruct" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.isConstruct"></a>
+
+```typescript
+import { AppSyncDataSourceStepFunctionsExpress } from '@opsbr/cdk-appsync-data-source-sfn-express'
+
+AppSyncDataSourceStepFunctionsExpress.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+###### `x`<sup>Required</sup> <a name="x" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.property.dataSource">dataSource</a></code> | <code>aws-cdk-lib.aws_appsync.CfnDataSource</code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.property.role">role</a></code> | <code>aws-cdk-lib.aws_iam.Role</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `dataSource`<sup>Required</sup> <a name="dataSource" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.property.dataSource"></a>
+
+```typescript
+public readonly dataSource: CfnDataSource;
+```
+
+- *Type:* aws-cdk-lib.aws_appsync.CfnDataSource
+
+---
+
+##### `role`<sup>Required</sup> <a name="role" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.property.role"></a>
+
+```typescript
+public readonly role: Role;
+```
+
+- *Type:* aws-cdk-lib.aws_iam.Role
+
+---
+
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### AddStateMachineResolverProps <a name="AddStateMachineResolverProps" id="@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps"></a>
+
+#### Initializer <a name="Initializer" id="@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.Initializer"></a>
+
+```typescript
+import { AddStateMachineResolverProps } from '@opsbr/cdk-appsync-data-source-sfn-express'
+
+const addStateMachineResolverProps: AddStateMachineResolverProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.fieldName">fieldName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.schema">schema</a></code> | <code>aws-cdk-lib.aws_appsync.CfnGraphQLSchema</code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.stateMachine">stateMachine</a></code> | <code>aws-cdk-lib.aws_stepfunctions.StateMachine</code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.typeName">typeName</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fieldName`<sup>Required</sup> <a name="fieldName" id="@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.fieldName"></a>
+
+```typescript
+public readonly fieldName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `schema`<sup>Required</sup> <a name="schema" id="@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.schema"></a>
+
+```typescript
+public readonly schema: CfnGraphQLSchema;
+```
+
+- *Type:* aws-cdk-lib.aws_appsync.CfnGraphQLSchema
+
+---
+
+##### `stateMachine`<sup>Required</sup> <a name="stateMachine" id="@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.stateMachine"></a>
+
+```typescript
+public readonly stateMachine: StateMachine;
+```
+
+- *Type:* aws-cdk-lib.aws_stepfunctions.StateMachine
+
+---
+
+##### `typeName`<sup>Required</sup> <a name="typeName" id="@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.typeName"></a>
+
+```typescript
+public readonly typeName: string;
+```
+
+- *Type:* string
+
+---
+
+### AppSyncDataSourceStepFunctionsExpressProps <a name="AppSyncDataSourceStepFunctionsExpressProps" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps"></a>
+
+#### Initializer <a name="Initializer" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps.Initializer"></a>
+
+```typescript
+import { AppSyncDataSourceStepFunctionsExpressProps } from '@opsbr/cdk-appsync-data-source-sfn-express'
+
+const appSyncDataSourceStepFunctionsExpressProps: AppSyncDataSourceStepFunctionsExpressProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps.property.apiId">apiId</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `apiId`<sup>Required</sup> <a name="apiId" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps.property.apiId"></a>
+
+```typescript
+public readonly apiId: string;
+```
+
+- *Type:* string
+
+---
 
 
 
