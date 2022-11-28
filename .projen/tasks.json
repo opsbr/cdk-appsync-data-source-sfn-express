@@ -130,6 +130,14 @@
         }
       ]
     },
+    "integ": {
+      "name": "integ",
+      "steps": [
+        {
+          "exec": "npx cdk deploy --app ./lib/integ.default.js"
+        }
+      ]
+    },
     "package": {
       "name": "package",
       "description": "Creates the distribution package",

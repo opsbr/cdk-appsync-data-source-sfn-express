@@ -9,5 +9,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
   packageName: '@opsbr/cdk-appsync-data-source-sfn-express',
   license: 'Apache-2.0',
   stability: 'experimental',
+  scripts: {
+    integ: 'npx cdk deploy --app ./lib/integ.default.js',
+  },
 });
+project.addGitIgnore('/cdk.out/');
 project.synth();
