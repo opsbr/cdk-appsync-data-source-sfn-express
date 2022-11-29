@@ -4,6 +4,8 @@
 
 ### AppSyncDataSourceStepFunctionsExpress <a name="AppSyncDataSourceStepFunctionsExpress" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress"></a>
 
+A CDK construct to create an AWS AppSync data source to call AWS Step Functions express workflows.
+
 #### Initializers <a name="Initializers" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer"></a>
 
 ```typescript
@@ -14,9 +16,9 @@ new AppSyncDataSourceStepFunctionsExpress(scope: Construct, id: string, props: A
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | *No description.* |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.props">props</a></code> | <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps">AppSyncDataSourceStepFunctionsExpressProps</a></code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | Scope in which this resource is defined. |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.id">id</a></code> | <code>string</code> | Scoped id of the resource. |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.props">props</a></code> | <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps">AppSyncDataSourceStepFunctionsExpressProps</a></code> | Resource properties. |
 
 ---
 
@@ -24,17 +26,23 @@ new AppSyncDataSourceStepFunctionsExpress(scope: Construct, id: string, props: A
 
 - *Type:* constructs.Construct
 
+Scope in which this resource is defined.
+
 ---
 
 ##### `id`<sup>Required</sup> <a name="id" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.id"></a>
 
 - *Type:* string
 
+Scoped id of the resource.
+
 ---
 
 ##### `props`<sup>Required</sup> <a name="props" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.Initializer.parameter.props"></a>
 
 - *Type:* <a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps">AppSyncDataSourceStepFunctionsExpressProps</a>
+
+Resource properties.
 
 ---
 
@@ -43,7 +51,7 @@ new AppSyncDataSourceStepFunctionsExpress(scope: Construct, id: string, props: A
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.createStateMachineResolver">createStateMachineResolver</a></code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.createStateMachineResolver">createStateMachineResolver</a></code> | Create a resolver to execute a state machine with a synchronous express workflow. |
 
 ---
 
@@ -61,15 +69,21 @@ Returns a string representation of this construct.
 public createStateMachineResolver(id: string, props: CreateStateMachineResolverProps): CfnResolver
 ```
 
+Create a resolver to execute a state machine with a synchronous express workflow.
+
 ###### `id`<sup>Required</sup> <a name="id" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.createStateMachineResolver.parameter.id"></a>
 
 - *Type:* string
+
+Scoped id of the resource.
 
 ---
 
 ###### `props`<sup>Required</sup> <a name="props" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.createStateMachineResolver.parameter.props"></a>
 
 - *Type:* <a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps">CreateStateMachineResolverProps</a>
+
+Resource properties.
 
 ---
 
@@ -104,8 +118,8 @@ Any object.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.property.dataSource">dataSource</a></code> | <code>aws-cdk-lib.aws_appsync.CfnDataSource</code> | *No description.* |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.property.role">role</a></code> | <code>aws-cdk-lib.aws_iam.Role</code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.property.dataSource">dataSource</a></code> | <code>aws-cdk-lib.aws_appsync.CfnDataSource</code> | Data source to call AWS Step Functions API endpoint for `StartSyncExecution`. |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.property.role">role</a></code> | <code>aws-cdk-lib.aws_iam.Role</code> | IAM role to call AWS Step Functions API endpoint for `StartSyncExecution`. |
 
 ---
 
@@ -129,6 +143,8 @@ public readonly dataSource: CfnDataSource;
 
 - *Type:* aws-cdk-lib.aws_appsync.CfnDataSource
 
+Data source to call AWS Step Functions API endpoint for `StartSyncExecution`.
+
 ---
 
 ##### `role`<sup>Required</sup> <a name="role" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.property.role"></a>
@@ -138,6 +154,8 @@ public readonly role: Role;
 ```
 
 - *Type:* aws-cdk-lib.aws_iam.Role
+
+IAM role to call AWS Step Functions API endpoint for `StartSyncExecution`.
 
 ---
 
@@ -158,7 +176,7 @@ const appSyncDataSourceStepFunctionsExpressProps: AppSyncDataSourceStepFunctions
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps.property.apiId">apiId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps.property.apiId">apiId</a></code> | <code>string</code> | Id of AppSync GraphQLApi to be associated with the data source. |
 
 ---
 
@@ -169,6 +187,8 @@ public readonly apiId: string;
 ```
 
 - *Type:* string
+
+Id of AppSync GraphQLApi to be associated with the data source.
 
 ---
 
@@ -186,10 +206,10 @@ const createStateMachineResolverProps: CreateStateMachineResolverProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.fieldName">fieldName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.schema">schema</a></code> | <code>aws-cdk-lib.aws_appsync.CfnGraphQLSchema</code> | *No description.* |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.stateMachine">stateMachine</a></code> | <code>aws-cdk-lib.aws_stepfunctions.StateMachine</code> | *No description.* |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.typeName">typeName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.fieldName">fieldName</a></code> | <code>string</code> | Field name for the resolver association e.g. `getPost`. |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.stateMachine">stateMachine</a></code> | <code>aws-cdk-lib.aws_stepfunctions.StateMachine</code> | State machine to be called. |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.typeName">typeName</a></code> | <code>string</code> | Type name for the resolver association e.g. `Query`. |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.schema">schema</a></code> | <code>aws-cdk-lib.aws_appsync.CfnGraphQLSchema</code> | GraphQL schema to be associated. |
 
 ---
 
@@ -201,15 +221,7 @@ public readonly fieldName: string;
 
 - *Type:* string
 
----
-
-##### `schema`<sup>Required</sup> <a name="schema" id="@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.schema"></a>
-
-```typescript
-public readonly schema: CfnGraphQLSchema;
-```
-
-- *Type:* aws-cdk-lib.aws_appsync.CfnGraphQLSchema
+Field name for the resolver association e.g. `getPost`.
 
 ---
 
@@ -221,6 +233,10 @@ public readonly stateMachine: StateMachine;
 
 - *Type:* aws-cdk-lib.aws_stepfunctions.StateMachine
 
+State machine to be called.
+
+The state machine type must be EXPRESS.
+
 ---
 
 ##### `typeName`<sup>Required</sup> <a name="typeName" id="@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.typeName"></a>
@@ -230,6 +246,22 @@ public readonly typeName: string;
 ```
 
 - *Type:* string
+
+Type name for the resolver association e.g. `Query`.
+
+---
+
+##### `schema`<sup>Optional</sup> <a name="schema" id="@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.schema"></a>
+
+```typescript
+public readonly schema: CfnGraphQLSchema;
+```
+
+- *Type:* aws-cdk-lib.aws_appsync.CfnGraphQLSchema
+
+GraphQL schema to be associated.
+
+Note: This is only used to add dependency. Omit if you don't manage your schema in CDK.
 
 ---
 
