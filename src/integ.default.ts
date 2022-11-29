@@ -92,7 +92,7 @@ const schema = new CfnGraphQLSchema(stack, 'Schema', {
 const sfnExpressDataSource = new AppSyncDataSourceStepFunctionsExpress(stack, 'SfnExpressDataSource', {
   apiId: api.attrApiId,
 });
-sfnExpressDataSource.addStateMachineResolver('SumResolver', {
+sfnExpressDataSource.createStateMachineResolver('SumResolver', {
   stateMachine: sumStateMachine,
   schema,
   typeName: 'Query',

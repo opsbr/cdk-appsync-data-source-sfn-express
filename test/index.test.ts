@@ -28,7 +28,7 @@ const stateMachine = new StateMachine(stack, 'myStateMachine', {
   stateMachineType: StateMachineType.EXPRESS,
   definition: new Pass(stack, 'Pass'),
 });
-dataSource.addStateMachineResolver('resolver', {
+dataSource.createStateMachineResolver('resolver', {
   stateMachine,
   schema: new CfnGraphQLSchema(stack, 'Schema', { apiId }),
   typeName: 'Query',
