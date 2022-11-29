@@ -21,20 +21,50 @@ import { StateMachine, StateMachineType } from 'aws-cdk-lib/aws-stepfunctions';
 import { Construct } from 'constructs';
 
 export interface AppSyncDataSourceStepFunctionsExpressProps {
+  /**
+   * Id of AppSync GraphQLApi to be associated with the data source.
+   */
   readonly apiId: string;
 }
 
 export interface CreateStateMachineResolverProps {
+  /**
+   * State machine to be called. The state machine type must be EXPRESS.
+   */
   readonly stateMachine: StateMachine;
-  readonly schema: CfnGraphQLSchema;
+  /**
+   * GraphQL schema to be associated.
+   * Note: This is only used to add dependency. Omit if you don't manage your schema in CDK.
+   */
+  readonly schema?: CfnGraphQLSchema;
+  /**
+   * Type name for the resolver association e.g. `Query`.
+   */
   readonly typeName: string;
+  /**
+   * Field name for the resolver association e.g. `getPost`.
+   */
   readonly fieldName: string;
 }
 
+/**
+ * A CDK construct to create an AWS AppSync data source to call AWS Step Functions express workflows.
+ */
 export class AppSyncDataSourceStepFunctionsExpress extends Construct {
+  /**
+   * IAM role to call AWS Step Functions API endpoint for `StartSyncExecution`.
+   */
   readonly role: Role;
+  /**
+   * Data source to call AWS Step Functions API endpoint for `StartSyncExecution`.
+   */
   readonly dataSource: CfnDataSource;
 
+  /**
+   * @param scope Scope in which this resource is defined.
+   * @param id Scoped id of the resource.
+   * @param props Resource properties.
+   */
   constructor(scope: Construct, id: string, props: AppSyncDataSourceStepFunctionsExpressProps) {
     super(scope, id);
     this.role = new Role(this, 'ServiceRole', {
@@ -63,6 +93,11 @@ export class AppSyncDataSourceStepFunctionsExpress extends Construct {
     });
   }
 
+  /**
+   * Create a resolver to execute a state machine with a synchronous express workflow
+   * @param id Scoped id of the resource
+   * @param props Resource properties
+   */
   createStateMachineResolver(id: string, props: CreateStateMachineResolverProps) {
     const { stateMachine, schema, typeName, fieldName } = props;
     if (stateMachine.stateMachineType !== StateMachineType.EXPRESS) {
@@ -95,7 +130,9 @@ export class AppSyncDataSourceStepFunctionsExpress extends Construct {
         $util.parseJson($ctx.result.body).output
       `,
     });
-    resolver.addDependsOn(schema);
+    if (schema) {
+      resolver.addDependsOn(schema);
+    }
     return resolver;
   }
 }
