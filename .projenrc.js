@@ -1,4 +1,5 @@
 const { awscdk } = require('projen');
+const { NpmAccess } = require('projen/lib/javascript');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Ryosuke Iwanaga',
   authorAddress: 'riywo@opsbr.com',
@@ -12,6 +13,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   scripts: {
     integ: 'npx cdk deploy --app ./lib/integ.default.js',
   },
+  npmAccess: NpmAccess.PUBLIC,
 });
 project.addGitIgnore('/cdk.out/');
 project.synth();
