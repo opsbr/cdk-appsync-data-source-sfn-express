@@ -43,7 +43,7 @@ new AppSyncDataSourceStepFunctionsExpress(scope: Construct, id: string, props: A
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.addStateMachineResolver">addStateMachineResolver</a></code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.createStateMachineResolver">createStateMachineResolver</a></code> | *No description.* |
 
 ---
 
@@ -55,21 +55,21 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addStateMachineResolver` <a name="addStateMachineResolver" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.addStateMachineResolver"></a>
+##### `createStateMachineResolver` <a name="createStateMachineResolver" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.createStateMachineResolver"></a>
 
 ```typescript
-public addStateMachineResolver(id: string, props: AddStateMachineResolverProps): CfnResolver
+public createStateMachineResolver(id: string, props: CreateStateMachineResolverProps): CfnResolver
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.addStateMachineResolver.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.createStateMachineResolver.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `props`<sup>Required</sup> <a name="props" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.addStateMachineResolver.parameter.props"></a>
+###### `props`<sup>Required</sup> <a name="props" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpress.createStateMachineResolver.parameter.props"></a>
 
-- *Type:* <a href="#@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps">AddStateMachineResolverProps</a>
+- *Type:* <a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps">CreateStateMachineResolverProps</a>
 
 ---
 
@@ -144,67 +144,6 @@ public readonly role: Role;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AddStateMachineResolverProps <a name="AddStateMachineResolverProps" id="@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps"></a>
-
-#### Initializer <a name="Initializer" id="@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.Initializer"></a>
-
-```typescript
-import { AddStateMachineResolverProps } from '@opsbr/cdk-appsync-data-source-sfn-express'
-
-const addStateMachineResolverProps: AddStateMachineResolverProps = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.fieldName">fieldName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.schema">schema</a></code> | <code>aws-cdk-lib.aws_appsync.CfnGraphQLSchema</code> | *No description.* |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.stateMachine">stateMachine</a></code> | <code>aws-cdk-lib.aws_stepfunctions.StateMachine</code> | *No description.* |
-| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.typeName">typeName</a></code> | <code>string</code> | *No description.* |
-
----
-
-##### `fieldName`<sup>Required</sup> <a name="fieldName" id="@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.fieldName"></a>
-
-```typescript
-public readonly fieldName: string;
-```
-
-- *Type:* string
-
----
-
-##### `schema`<sup>Required</sup> <a name="schema" id="@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.schema"></a>
-
-```typescript
-public readonly schema: CfnGraphQLSchema;
-```
-
-- *Type:* aws-cdk-lib.aws_appsync.CfnGraphQLSchema
-
----
-
-##### `stateMachine`<sup>Required</sup> <a name="stateMachine" id="@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.stateMachine"></a>
-
-```typescript
-public readonly stateMachine: StateMachine;
-```
-
-- *Type:* aws-cdk-lib.aws_stepfunctions.StateMachine
-
----
-
-##### `typeName`<sup>Required</sup> <a name="typeName" id="@opsbr/cdk-appsync-data-source-sfn-express.AddStateMachineResolverProps.property.typeName"></a>
-
-```typescript
-public readonly typeName: string;
-```
-
-- *Type:* string
-
----
-
 ### AppSyncDataSourceStepFunctionsExpressProps <a name="AppSyncDataSourceStepFunctionsExpressProps" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps"></a>
 
 #### Initializer <a name="Initializer" id="@opsbr/cdk-appsync-data-source-sfn-express.AppSyncDataSourceStepFunctionsExpressProps.Initializer"></a>
@@ -227,6 +166,67 @@ const appSyncDataSourceStepFunctionsExpressProps: AppSyncDataSourceStepFunctions
 
 ```typescript
 public readonly apiId: string;
+```
+
+- *Type:* string
+
+---
+
+### CreateStateMachineResolverProps <a name="CreateStateMachineResolverProps" id="@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps"></a>
+
+#### Initializer <a name="Initializer" id="@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.Initializer"></a>
+
+```typescript
+import { CreateStateMachineResolverProps } from '@opsbr/cdk-appsync-data-source-sfn-express'
+
+const createStateMachineResolverProps: CreateStateMachineResolverProps = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.fieldName">fieldName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.schema">schema</a></code> | <code>aws-cdk-lib.aws_appsync.CfnGraphQLSchema</code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.stateMachine">stateMachine</a></code> | <code>aws-cdk-lib.aws_stepfunctions.StateMachine</code> | *No description.* |
+| <code><a href="#@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.typeName">typeName</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fieldName`<sup>Required</sup> <a name="fieldName" id="@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.fieldName"></a>
+
+```typescript
+public readonly fieldName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `schema`<sup>Required</sup> <a name="schema" id="@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.schema"></a>
+
+```typescript
+public readonly schema: CfnGraphQLSchema;
+```
+
+- *Type:* aws-cdk-lib.aws_appsync.CfnGraphQLSchema
+
+---
+
+##### `stateMachine`<sup>Required</sup> <a name="stateMachine" id="@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.stateMachine"></a>
+
+```typescript
+public readonly stateMachine: StateMachine;
+```
+
+- *Type:* aws-cdk-lib.aws_stepfunctions.StateMachine
+
+---
+
+##### `typeName`<sup>Required</sup> <a name="typeName" id="@opsbr/cdk-appsync-data-source-sfn-express.CreateStateMachineResolverProps.property.typeName"></a>
+
+```typescript
+public readonly typeName: string;
 ```
 
 - *Type:* string

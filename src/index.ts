@@ -24,7 +24,7 @@ export interface AppSyncDataSourceStepFunctionsExpressProps {
   readonly apiId: string;
 }
 
-export interface AddStateMachineResolverProps {
+export interface CreateStateMachineResolverProps {
   readonly stateMachine: StateMachine;
   readonly schema: CfnGraphQLSchema;
   readonly typeName: string;
@@ -63,7 +63,7 @@ export class AppSyncDataSourceStepFunctionsExpress extends Construct {
     });
   }
 
-  addStateMachineResolver(id: string, props: AddStateMachineResolverProps) {
+  createStateMachineResolver(id: string, props: CreateStateMachineResolverProps) {
     const { stateMachine, schema, typeName, fieldName } = props;
     if (stateMachine.stateMachineType !== StateMachineType.EXPRESS) {
       throw new Error(`stateMachine must be EXPRESS type. (${stateMachine.stateMachineName} is ${stateMachine.stateMachineType})`);
