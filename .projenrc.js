@@ -1,8 +1,9 @@
 const { awscdk } = require('projen');
 const { NpmAccess } = require('projen/lib/javascript');
 const project = new awscdk.AwsCdkConstructLibrary({
-  author: 'Ryosuke Iwanaga',
-  authorAddress: 'riywo@opsbr.com',
+  author: 'OpsBR Software Technology Inc.',
+  authorAddress: 'info@opsbr.com',
+  authorOrganization: true,
   cdkVersion: '2.52.0',
   defaultReleaseBranch: 'main',
   name: 'cdk-appsync-data-source-sfn-express',

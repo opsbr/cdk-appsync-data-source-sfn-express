@@ -30,9 +30,9 @@
     "projen": "npx projen"
   },
   "author": {
-    "name": "Ryosuke Iwanaga",
-    "email": "riywo@opsbr.com",
-    "organization": false
+    "name": "OpsBR Software Technology Inc.",
+    "email": "info@opsbr.com",
+    "organization": true
   },
   "devDependencies": {
     "@types/jest": "^27",
