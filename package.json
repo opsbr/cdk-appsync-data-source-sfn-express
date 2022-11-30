@@ -1,5 +1,6 @@
 {
   "name": "@opsbr/cdk-appsync-data-source-sfn-express",
+  "description": "A CDK construct to create an AWS AppSync data source to call AWS Step Functions express workflows.",
   "repository": {
     "type": "git",
     "url": "https://github.com/opsbr/cdk-appsync-data-source-sfn-express.git"
@@ -31,7 +32,7 @@
   },
   "author": {
     "name": "OpsBR Software Technology Inc.",
-    "email": "info@opsbr.com",
+    "url": "https://opsbr.com",
     "organization": true
   },
   "devDependencies": {
