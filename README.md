@@ -40,8 +40,8 @@ const sfnExpressDataSource = new AppSyncDataSourceStepFunctionsExpress(stack, 'S
   apiId: api.attrApiId,
 });
 
-sfnExpressDataSource.createStateMachineResolver('SumResolver', {
-  stateMachine: sumStateMachine,
+sfnExpressDataSource.createStateMachineResolver('Resolver', {
+  stateMachine,
   schema,
   typeName: 'Query',
   fieldName: 'getPost',
