@@ -63,7 +63,11 @@
     "constructs": "^10.0.5"
   },
   "keywords": [
-    "cdk"
+    "Serverless",
+    "State Machine",
+    "appsync",
+    "cdk",
+    "stepfunctions"
   ],
   "engines": {
     "node": ">= 18.12.1"

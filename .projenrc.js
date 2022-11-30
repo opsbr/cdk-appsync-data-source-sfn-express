@@ -18,6 +18,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   minNodeVersion: '18.12.1',
   packageManager: 'yarn',
   npmAccess: NpmAccess.PUBLIC,
+  keywords: [
+    'appsync',
+    'stepfunctions',
+    'Serverless',
+    'State Machine',
+  ],
   githubOptions: {
     projenCredentials: GithubCredentials.fromApp(),
   },
