@@ -1,4 +1,5 @@
 const { awscdk } = require('projen');
+const { GithubCredentials } = require('projen/lib/github');
 const { NpmAccess } = require('projen/lib/javascript');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'OpsBR Software Technology Inc.',
@@ -15,6 +16,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
     integ: 'npx cdk deploy --app ./lib/integ.default.js',
   },
   npmAccess: NpmAccess.PUBLIC,
+  githubOptions: {
+    projenCredentials: GithubCredentials.fromApp(),
+  },
 });
 project.addGitIgnore('/cdk.out/');
 project.synth();
