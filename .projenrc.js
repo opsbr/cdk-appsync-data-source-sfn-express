@@ -15,9 +15,15 @@ const project = new awscdk.AwsCdkConstructLibrary({
   scripts: {
     integ: 'npx cdk deploy --app ./lib/integ.default.js',
   },
+  minNodeVersion: '18.12.1',
+  packageManager: 'yarn',
   npmAccess: NpmAccess.PUBLIC,
   githubOptions: {
     projenCredentials: GithubCredentials.fromApp(),
+  },
+  workflowGitIdentity: {
+    name: 'opsbr-bot',
+    email: 'opsbr-bot@users.noreply.github.com',
   },
 });
 project.addGitIgnore('/cdk.out/');
