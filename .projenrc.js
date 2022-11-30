@@ -2,8 +2,9 @@ const { awscdk } = require('projen');
 const { GithubCredentials } = require('projen/lib/github');
 const { NpmAccess } = require('projen/lib/javascript');
 const project = new awscdk.AwsCdkConstructLibrary({
+  description: 'A CDK construct to create an AWS AppSync data source to call AWS Step Functions express workflows.',
   author: 'OpsBR Software Technology Inc.',
-  authorAddress: 'info@opsbr.com',
+  authorAddress: 'https://opsbr.com',
   authorOrganization: true,
   cdkVersion: '2.52.0',
   defaultReleaseBranch: 'main',
